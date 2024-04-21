@@ -2,9 +2,9 @@ FROM python:3.9
 
 WORKDIR /app
 
-COPY app.py
-COPY requirements.txt
-COPY mymodel.pkl
+COPY app.py /app
+COPY requirements.txt /app
+COPY mymodel.pkl /app
 
 RUN pip install -r requirements.txt
 
